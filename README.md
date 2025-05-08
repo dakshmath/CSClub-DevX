@@ -1,1 +1,1 @@
-# CS-Club
+Mt. Hebron CS Club Website

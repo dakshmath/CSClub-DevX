@@ -92,7 +92,8 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a:hover, nav ul li a.active {
+nav ul li a:hover,
+nav ul li a.active {
     color: var(--primary-color);
     background-color: rgba(0, 255, 170, 0.1);
 }
@@ -130,12 +131,10 @@ nav ul li a.active::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background: repeating-linear-gradient(
-        to bottom,
-        transparent 0px,
-        rgba(0, 255, 170, 0.05) 1px,
-        transparent 2px
-    );
+    background: repeating-linear-gradient(to bottom,
+            transparent 0px,
+            rgba(0, 255, 170, 0.05) 1px,
+            transparent 2px);
     pointer-events: none;
     animation: scan 4s linear infinite;
 }
@@ -276,10 +275,11 @@ main {
 
 /* Presentation Section */
 .presentation-container {
-    width: 100%;
+    width: 30%;
     height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    position: relative;
+    padding-bottom: 36%;
+    /* 16:9 aspect ratio */
+    position: center;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -552,6 +552,7 @@ footer {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -562,6 +563,7 @@ footer {
     0% {
         box-shadow: 0 0 10px rgba(0, 255, 170, 0.5);
     }
+
     100% {
         box-shadow: 0 0 20px rgba(0, 255, 170, 0.8);
     }
@@ -571,6 +573,7 @@ footer {
     0% {
         box-shadow: 0 0 5px rgba(0, 255, 170, 0.5);
     }
+
     100% {
         box-shadow: 0 0 15px rgba(0, 255, 170, 1);
     }
@@ -580,6 +583,7 @@ footer {
     0% {
         background-position: 0 0;
     }
+
     100% {
         background-position: 0 100%;
     }
@@ -591,27 +595,30 @@ footer {
         flex-direction: column;
         padding: 1rem 2%;
     }
-    
+
     .logo-container {
         margin-bottom: 1rem;
     }
-    
+
     nav ul li {
         margin-left: 1rem;
     }
-    
+
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .content-box {
         padding: 1.5rem;
     }
-    
-    .team-members, .join-info, .requirements, .opportunities {
+
+    .team-members,
+    .join-info,
+    .requirements,
+    .opportunities {
         grid-template-columns: 1fr;
     }
-    
+
     .application-buttons {
         flex-direction: column;
         align-items: center;
